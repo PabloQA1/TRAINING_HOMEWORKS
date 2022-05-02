@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Calculator tests">
+  <test thread-count="2" name="Exponentiation tests">
+    <groups>
+      <run>
+        <exclude name="Parametrized test"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.epam.training.AT.hw_1.ExponentiationTest"/>
+    </classes>
+  </test>
+  <test thread-count="2" name="Division tests">
+    <classes>
+      <class name="com.epam.training.AT.hw_1.DivisionTest"/>
+    </classes>
+  </test>
+  <test thread-count="2" name="Multiplication tests">
+    <classes>
+      <class name="com.epam.training.AT.hw_1.MultiplicationTest"/>
+    </classes>
+  </test>
+  <test thread-count="2" name="PositiveAndNegative tests">
+    <classes>
+      <class name="com.epam.training.AT.hw_1.PositiveAndNegativeTest"/>
+    </classes>
+  </test>
+  <test thread-count="2" name="Subtraction tests">
+    <classes>
+      <class name="com.epam.training.AT.hw_1.SubtractionTest"/>
+    </classes>
+  </test>
+  <test thread-count="2" name="Summation tests">
+    <classes>
+      <class name="com.epam.training.AT.hw_1.SummationTest"/>
+    </classes>
+  </test>
+  <test thread-count="2" name="Trigonometric tests">
+    <classes>
+      <class name="com.epam.training.AT.hw_1.TrigonometricTest"/>
+    </classes>
+  </test>
+</suite>
