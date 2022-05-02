@@ -8,7 +8,6 @@ public class FirstTask {
     private static double m2;
 
     public static void main(String[] args) {
-        for (String ignored : args) {
             try {
                 a = Integer.parseInt(args[0]);
             } catch (NumberFormatException e) {
@@ -33,11 +32,8 @@ public class FirstTask {
                 System.err.println("Argument < " + args[3] + " > must be an double.");
                 System.exit(1);
             }
-
-            double G = 4 * Math.pow(Math.PI, 2) * Math.pow(a, 3) / Math.pow(p, 2) * (m1 + m2);
+            double G = 4 * Math.pow(Math.PI, 2) * Math.pow(a, 3) / (Math.pow(p, 2) * (m1 + m2));
             System.out.println(G);
-            break;
-        }
     }
 }
 

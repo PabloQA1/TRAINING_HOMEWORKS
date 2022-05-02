@@ -7,7 +7,6 @@ public class SecondTask {
     private static int n;
 
     public static void main(String[] args) {
-        for (String ignored : args) {
             try {
                 algorithmId = Integer.parseInt(args[0]);
             } catch (NumberFormatException e) {
@@ -27,8 +26,6 @@ public class SecondTask {
                 System.exit(1);
             }
             executeCalculateByInputId();
-            break;
-        }
     }
 
     public static void executeCalculateByInputId() {
